@@ -1,0 +1,8 @@
+{
+    "meta" : {
+        "label" : "Custom hooks for GDPR",
+        "description" : "Custom hooks for GDPR",
+        "icon" : "icon-puzzle-piece"
+    },
+    "hooksClass" : "com.dataiku.dip.plugins.gdpr.GDPRHooks"
+}

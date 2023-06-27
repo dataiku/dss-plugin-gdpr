@@ -1,0 +1,30 @@
+{
+    "id": "gdpr",
+    "version": "0.1.6",
+    "meta": {
+        "label": "GDPR",
+        "description": "Implement policies to facilitate compliance with GDPR (European regulations for personal data)",
+        "author": "Dataiku",
+        "icon": "icon-lock",
+        "licenseInfo": "Apache Software License",
+        "url": "https://www.dataiku.com/dss/plugins/info/gdpr.html",
+        "tags": ["Governance"]
+    },
+
+    "params": [
+        {
+            "name": "gdpr_admin_groups",
+            "label": "GDPR admin groups",
+            "type": "STRING",
+            "mandatory": false,
+            "description": "Optional. Comma-separated list of security groups ids to manage GDPR policies"
+        },
+        {
+            "name": "gdpr_doc_groups",
+            "label": "GDPR documentation groups",
+            "type": "STRING",
+            "mandatory": false,
+            "description": "Optional. Comma-separated list of security groups ids to edit GDPR documentation fields"
+        }
+    ]
+}

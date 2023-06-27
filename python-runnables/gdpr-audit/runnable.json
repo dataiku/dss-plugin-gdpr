@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "label": "GDPR audit",
+        "description": "Builds an audit about personal data regarding GDPR policies",
+        "icon": "icon-dku-gdpr"
+    },
+    "impersonate": false,
+    "permissions": ["ADMIN"],
+    "resultType": "HTML",
+    "resultLabel": "GDPR audit",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "macroRoles": [],
+    "params": [
+        {
+            "name": "includeProjects",
+            "label": "Include projects",
+            "type": "BOOLEAN",
+            "description": "Include projects section in the audit",
+            "mandatory": false,
+            "defaultValue": true
+        },
+        {
+            "name": "includeAllObjects",
+            "label": "Include all objects",
+            "type": "BOOLEAN",
+            "description":"Include all objects section in the audit",
+            "mandatory": false,
+            "defaultValue": true
+        }
+    ],
+    "adminParams": [
+        {
+            "name": "includeConnections",
+            "label": "Include connections",
+            "type": "BOOLEAN",
+            "description": "Include connections section in the audit",
+            "mandatory": false,
+            "defaultValue": false
+        },
+        {
+            "name": "allProjects",
+            "label": "All projects",
+            "type": "BOOLEAN",
+            "description": "Apply to all projects, not just the current one",
+            "mandatory": false,
+            "defaultValue": false
+        }
+    ]
+}

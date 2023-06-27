@@ -1,0 +1,143 @@
+{
+    "meta" : {
+        "label" : "GDPR fields",
+        "description" : "GDPR fields",
+        "icon" : "icon-puzzle-piece"
+    },
+    "customFields" : [
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["DATASET"]
+            },
+            "field": {
+                "name": "gdpr_contains_personal_data",
+                "label": "Contains personal data",
+                "description": "Whether the object contains personal data",
+                "type": "SELECT",
+                "iconInDatasetPreview": "icon-dku-gdpr",
+                "defaultValue": "UNSURE",
+                "selectChoices": [
+                    {
+                        "value": "YES",
+                        "label": "Yes",
+                        "icon": "icon-lock",
+                        "color": "#ce1329"
+                    },
+                    {
+                        "value": "NO",
+                        "label": "No",
+                        "icon": "icon-ok",
+                        "color": "#53A802"
+                    },
+                    {
+                        "value": "UNSURE",
+                        "label": "Not yet defined",
+                        "icon": "icon-question",
+                        "color": "#03A9F4"
+                    }
+                ]
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["DATASET"]
+            },
+            "field": {
+                "name": "gdpr_purposes",
+                "label": "Purposes",
+                "description": "What the data can be used for",
+                "type": "TEXTAREA"
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["DATASET"]
+            },
+            "field": {
+                "name": "gdpr_retention_policy",
+                "label": "Retention policy",
+                "description": "How long the data should be kept",
+                "type": "STRING"
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["DATASET"]
+            },
+            "field": {
+                "name": "gdpr_legal_consent",
+                "label": "Legal basis for consent",
+                "description": "How is personal data processing justified",
+                "type": "STRING"
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["PROJECT"]
+            },
+            "field": {
+                "name": "gdpr_forbid_dataset_sharing",
+                "label": "Forbid dataset sharing",
+                "description": "Forbid sharing dataset with personal data",
+                "type": "BOOLEAN",
+                "defaultValue": false
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["PROJECT"]
+            },
+            "field": {
+                "name": "gdpr_forbid_dataset_export",
+                "label": "Forbid dataset and project export",
+                "description": "Forbid exporting project with data, and exporting datasets with personal data",
+                "type": "BOOLEAN",
+                "defaultValue": false
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["PROJECT"]
+            },
+            "field": {
+                "name": "gdpr_forbid_model_creation",
+                "label": "Forbid model creation",
+                "description": "Forbid creating a model based on a dataset with personal data",
+                "type": "BOOLEAN",
+                "defaultValue": false
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["PROJECT"]
+            },
+            "field": {
+                "name": "gdpr_forbid_uploaded_datasets",
+                "label": "Forbid uploaded datasets",
+                "description": "Forbid uploading data to DSS using an uploaded dataset",
+                "type": "BOOLEAN",
+                "defaultValue": false
+            }
+        },
+        {
+            "applyToObjects" : {
+                "mode": "SOME",
+                "includedObjectTypes": ["PROJECT"]
+            },
+            "field": {
+                "name": "gdpr_forbidden_connections",
+                "label": "Forbidden connections",
+                "description": "List of forbidden connections to create a dataset",
+                "type": "CONNECTIONS"
+            }
+        }
+    ]
+}

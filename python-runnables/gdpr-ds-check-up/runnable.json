@@ -1,0 +1,34 @@
+{
+    "meta": {
+        "label": "GDPR Datasets Check up",
+        "description": "List datasets regarding GDPR policies on personal data",
+        "icon": "icon-dku-gdpr"
+    },
+    "impersonate": false,
+    "permissions": ["ADMIN"],
+    "resultType": "HTML",
+    "resultLabel": "GDPR Datasets Check up",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "macroRoles": [],
+    "params": [
+        {
+            "name": "onlyUnsure",
+            "label": "Only UNSURE",
+            "type": "BOOLEAN",
+            "description": "Only includes datasets that are not defined yet",
+            "mandatory": false,
+            "defaultValue": true
+        }
+    ],
+    "adminParams": [
+        {
+            "name": "allProjects",
+            "label": "All projects",
+            "type": "BOOLEAN",
+            "description": "Apply to all projects, not just the current one",
+            "mandatory": false,
+            "defaultValue": false
+        }
+    ]
+}
