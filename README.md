@@ -2,6 +2,8 @@
 
 This plugin provides policy hooks to facilitate compliance with GDPR (European regulations for personal data)
 
+See https://www.dataiku.com/product/plugins/gdpr/ to learn more
+
 It helps organizations implement the GDPR defining rules and processes directly in Dataiku.
 
 It provides an example of how organizations can use custom fields and policies to comply with internal policies and external regulations (such as GDPR) around data privacy and protection.
