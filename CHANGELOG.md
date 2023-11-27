@@ -4,7 +4,7 @@
 
 - Add support for Python 3
 
-## Version 0.1.6 - Feature release - 2023-06-27
+## Version 0.1.5 - Feature release - 2019-01-29
 
 - Initial release
 - Document data sources with sensitive information, and enforce good practices
