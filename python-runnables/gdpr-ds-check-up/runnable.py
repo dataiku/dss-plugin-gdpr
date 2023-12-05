@@ -22,7 +22,7 @@ class GDPRDSCheckUpRunnable(Runnable):
         else:
             project_key_list = [self.project_key]
 
-        callback_progression = (100 / len(project_key_list)) if project_key_list > 0 else 100
+        callback_progression = (100 / len(project_key_list)) if len(project_key_list) > 0 else 100
         progress = 0;
         progress_callback(progress)
         html_ret = "<html><head><style>" \
