@@ -1,5 +1,9 @@
 # Changelog
 
+## [Version 0.2.1](https://github.com/dataiku/dss-plugin-gdpr/releases/tag/v0.2.1) - Bugfix release - 2026-06-25
+
+- Fixed unable to create a recipe with a input dataset with personal info to an output dataset with no personal info 
+
 ## [Version 0.2.0](https://github.com/dataiku/dss-plugin-gdpr/releases/tag/v0.2.0) - Feature release - 2023-11-27
 
 - Add support for Python 3

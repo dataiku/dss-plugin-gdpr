@@ -50,6 +50,7 @@ import com.dataiku.dip.utils.JSON;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
+import com.dataiku.dip.util.DatasetLocUtils;
 
 public class GDPRHooks extends CustomPolicyHooks {
     @Autowired private ProjectsService projectsService;
@@ -421,7 +422,7 @@ public class GDPRHooks extends CustomPolicyHooks {
                 SerializedDataset sd = ds.getModel();
                 if (sd.customFields.has("gdpr_contains_personal_data") && "NO".equals(sd.customFields.get("gdpr_contains_personal_data").getAsString())) {
                     sd.customFields.addProperty("gdpr_contains_personal_data", "UNSURE");
-                    datasetSaveService.save(ds.getLoc(), sd, user);
+                    datasetSaveService.save(DatasetLocUtils.forDataset(sd), sd, user);
                 }
             }
         }
